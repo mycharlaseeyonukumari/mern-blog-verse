@@ -1,4 +1,6 @@
 import NavBar from"./NavBar.jsx"
+import { Bookmark } from 'lucide-react';
+
 function HomePage() {
     const posts = [{
         id: 1,
@@ -61,31 +63,33 @@ function HomePage() {
 
             <div className="flex-col">
                 <NavBar/>
-                <h1 className="font-bold text-center">Welcome To BlogVerse</h1>
-                <p className="text-center"> Discover amazing stories,insights and ideas from our community of <br></br> writers sign in to your own posts and save your favorites</p>
+                <h1 className="font-bold text-center text-blue-600">Welcome To BlogVerse</h1>
+                <p className="text-center sm:text md:text-xl"> Discover amazing stories,insights and ideas from our community of <br></br> writers sign in to your own posts and save your favorites</p>
 
-                <div className=" flex gap-5">{
-                    posts.map((post) => (<div className=" border-1 rounded-2xl " key={post.id}>
-                        <div className="flex">
+                <div className="mx-28 mt-10 flex justify-center flex-wrap gap-16 w-[90%] md:w-1/3">{
+                    posts.map((post) => (<div className=" border-1 rounded-2xl w-[400px]" key={post.id}>
+                        <div className="flex relative ">
                             <img  className="rounded-t-2xl h-50 w-100"src={post.Image} alt="writing" />
                             <p className="border absolute top-left rounded-2xl bg-blue-500 text-white cursor-pointer py-1 px-1">Technology</p>
+                            <Bookmark className="absolute top-2 right-5 bg-white  rounded-2xl h-7 w-7" />
                         </div>
-                        <div className="flex-justify">
+                        <div className="flex w-[90%] ">
                             <div classNmae="flex- gap-5 mt-3 px-2">
                                 <img className="rounded-full h-12 w-12" src={post.profilePic} alt="writing" />
                             </div>
-                            <div className="gap-5 flex">
+                            <div className="gap-5 flex w-[90%] ">
                                 <p className="font-bold">{post.author}</p>
                                 <p>{post.postedOn}-{post.timeRead}</p>
                             </div>
 
                         </div>
-                        <div>
-                            <p className="font-bold">{post.title}</p>
-                            <p>{post.content}</p>
+                        <div className="w-[90%]">
+                            <h2 className="font-bold py-4 px-4">{post.title}</h2>
+                            <p className="py-4 px-4">{post.content}</p>
                         </div>
-                        <div>
-                            <buttton className="text-blue-500 ">Read more</buttton>
+                        <div className="w-[90%]">
+                            <buttton className="text-blue-500 py-1 px-10 ">Read more</buttton>
+                            <p className="py-1 px-1">{post.timeRead}</p>
                         </div>
 
 
