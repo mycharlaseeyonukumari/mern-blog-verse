@@ -8,7 +8,7 @@ function SignIn() {
         SetShowPassWord((PassWord) => !PassWord)
     }
     return (
-        <div className="flex flex-col justify-center items-center h-[50]">
+        <div className="flex flex-col justify-center items-center ">
             <NavBar />
             <form className='flex flex-col border-1 border-black rounded-2xl justify-center  gap-5  mt-50 w-[90%] md:w-1/3'>
                 <div className="text-center">

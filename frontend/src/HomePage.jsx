@@ -74,7 +74,7 @@ function HomePage() {
                             <Bookmark className="absolute top-2 right-5 bg-white  rounded-2xl h-7 w-7" />
                         </div>
                         <div className="flex w-[90%] ">
-                            <div classNmae="flex- gap-5 mt-3 px-2">
+                            <div className="flex- gap-5 mt-3 px-2">
                                 <img className="rounded-full h-12 w-12" src={post.profilePic} alt="writing" />
                             </div>
                             <div className="gap-5 flex w-[90%] ">
