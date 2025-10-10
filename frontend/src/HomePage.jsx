@@ -61,7 +61,7 @@ function HomePage() {
     return (
         <div>
 
-            <div className="flex-col">
+            <div className=" min-h-screen flex-col ">
                 <NavBar/>
                 <h1 className="font-bold text-center text-blue-600">Welcome To BlogVerse</h1>
                 <p className="text-center sm:text md:text-xl"> Discover amazing stories,insights and ideas from our community of <br></br> writers sign in to your own posts and save your favorites</p>

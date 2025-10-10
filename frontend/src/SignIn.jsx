@@ -8,12 +8,12 @@ function SignIn() {
         SetShowPassWord((PassWord) => !PassWord)
     }
     return (
-        <div className="flex flex-col justify-center items-center ">
+        <div className=" flex flex-col items-center justify-center">
             <NavBar />
             <form className='flex flex-col border-1 border-black rounded-2xl justify-center  gap-5  mt-50 w-[90%] md:w-1/3'>
                 <div className="text-center">
                     <h1 className="font-bold flex flex-col">Sign In</h1>
-                    <p classNmae=""> Access your account</p>
+                    <p className=""> Access your account</p>
                 </div>
                 <div className="px-5 py=3 w-[90%]">
                     <p className="text-md text-gray-700 font-semibold ">Email Address</p>
